@@ -1,0 +1,9 @@
+claim,evidence
+ΔNPC ≈ +0.02%/-10.3%/+0.21% (Sano/Kudamatsu/Yasu),scenario_results_v2.csv ltp_pct; computed in p07b_optimize_v2.py
+P(ΔNPC>0)=1.00/0.00/1.00 under 500 MC draws,sensitivity_mc_v2.csv; p10b_sensitivity_v2.py
+conductor upsizing ~0 km; conductor-only ablation ≈0,ablation_results.csv; upsize_km in scenario_results_v2.csv
+"feasibility gates: vdrop≤6%, ampacity, 150kVA loading",config/ENGINEERING_FEASIBILITY_SPEC.yaml; p07b_optimize_v2.py
+max vdrop 1.8-4.9% after correction (all feasible clusters ≤6%),scenario_results_v2.csv max_vdrop
+MV-served nodes >150kW excluded (52/19/31 nodes),mv_served_nodes.csv; p06b_reconstruct_v2.py
+rooftop PV reduces NPC further in ~all clusters (upper bound),dg_results_v2.csv p_s3_better
+"CIGRE LV converged; Iwamoto 11-bus non-converged, excluded",benchmark_validation.csv; audit_v2/BENCHMARK_VALIDATION_REPORT.md

@@ -1,0 +1,8 @@
+claim,evidence_source,values,label
+LTP positive in all three zones,scenario_results.csv:ltp_pct,"Sano 12.2%, Kudamatsu 2.5%, Yasu 11.7%",modeled
+Peak losses roughly halved by S2,"scenario_results.csv:s1_plkw,s2_plkw",reduction 62/60/65%,modeled
+LTP robust for Sano/Yasu; Kudamatsu marginal,sensitivity_mc.csv:p_ltp_pos,P(LTP>0) 1.00/0.73/1.00,sensitivity
+Optimized topology reuses most corridor edges,scenario_results.csv:mean_tld,mean TLD 0.09/0.11/0.07,modeled
+Rooftop PV reduces NPC in every cluster,dg_results.csv:p_s3_better,P(S3<S2)=1.00 all zones,modeled
+Tier-1 pole-linked inventory only in Sano,data_audit.csv:tier,"Sano 9519 rows, Kudamatsu 4227",observed
+CIGRE LV benchmark converged; Iwamoto 11-bus did not,benchmark_validation.csv:converged,"cigre_lv=True, iwamoto=False",benchmark

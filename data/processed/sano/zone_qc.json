@@ -1,0 +1,10 @@
+{
+ "city": "sano",
+ "road_nodes": 826,
+ "road_edges": 2347,
+ "buildings": 8126,
+ "mean_snap_m": 41.119285596484616,
+ "total_p_kw": 51476.5474608137,
+ "median_building_p_kw": 4.467964983965599,
+ "mean_building_p_kw": 6.334795404973383
+}

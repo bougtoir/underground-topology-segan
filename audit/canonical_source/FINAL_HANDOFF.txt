@@ -1,0 +1,8 @@
+SEGAN one-shot study — final handoff (2026-09-24 11:23:47.809497 UTC)
+Verdict: complete single-VM sequential run; all artifacts reproducible via scripts p03-p14.
+Primary result: LTP 12.2% / 2.5% / 11.7% (Sano/Kudamatsu/Yasu).
+Known limitations: LV feeders reconstructed (not observed); LinDistFlow voltage drops
+exceed practical limits (same model prices both scenarios); case11_iwamoto
+benchmark did not converge (reported); S3 PV economics are an upper bound;
+250-word abstract limit unverified.
+Package: submission_package.zip; manuscript/manuscript_draft.docx + highlights.txt.

@@ -1,0 +1,47 @@
+FINAL STATUS: MAJOR INTERNAL REVISION REMAINS (corrected package built, headline finding reversed)
+
+1. The 29–38% voltage-drop problem was STRUCTURAL, not an implementation bug:
+   350 kW raw building peaks aggregated undiversified onto 415 V LV radials,
+   with no ampacity or transformer gate. See audit_v2/VOLTAGE_ROOT_CAUSE_AUDIT.md.
+
+2. Exact correction (frozen in config/ENGINEERING_FEASIBILITY_SPEC.yaml before
+   corrected runs): coincidence factor 0.6; nodes >150 kW raw peak treated as
+   MV-served and excluded; cluster target 100 kW (~150 kVA transformer zone);
+   ampacity + 6% voltage-drop + transformer-loading + radiality gates;
+   infeasible clusters excluded from the primary estimate with an
+   inclusion/exclusion sensitivity run.
+
+3. Did S1-vs-S2 survive? NO — the original claim does not survive:
+   LTP/ΔNPC v1 12.2/2.5/11.7% → v2 +0.02%/-10.3%/+0.21%
+   (Sano/Kudamatsu/Yasu). MC P(ΔNPC>0): 1.00/0.00/1.00.
+   The paper survives only as a corrected, negative-result manuscript.
+
+4. Feasibility diagnostics: 185/210, 69/77, 82/84 clusters feasible;
+   max vdrop now 1.8–4.9%; conductor upsizing ~0 km (150 mm² suffices at
+   feasible LV scale); demand coverage 70/89/85% of LV-modeled demand.
+
+5. Benchmark: CIGRE LV converged (pandapower 3.5.5); Iwamoto 11-bus
+   non-converged → excluded from evidence, reported.
+
+6. Data-tier corrections: MV-served nodes (>150 kW) separated and reported
+   (mv_served_nodes.csv); security-light anchors never equated with poles.
+
+7. Final terminology: ΔNPC "life-cycle renewal benefit"; TDD "topology
+   divergence distance" (edge-set distance, not likelihood).
+
+8. Limitations retained: modeled (not observed) topologies; LinDistFlow
+   surrogate not validated line-by-line on synthesized feeders; coincidence
+   factor/MV threshold/cluster target are frozen assumptions; PV overlay is
+   an upper bound; ~70–89% LV demand coverage.
+
+9. Exact upload files (SEGAN submission set):
+   manuscript/manuscript_draft_v2.docx (or manuscript_inline_v2.docx),
+   manuscript/highlights_v2.txt, figures/v2_fig1..5 PNG (300 dpi),
+   tables/table2_results_v2.csv — all inside SEGAN_submission_package_FINAL.zip.
+
+10. Reproduce: .venv/bin/python scripts/p06b_reconstruct_v2.py &&
+    scripts/p07b_optimize_v2.py && scripts/p07c_post_v2.py &&
+    scripts/p08b_dg_v2.py && scripts/p10b_sensitivity_v2.py &&
+    scripts/p11b_freeze_v2.py && scripts/p12b_figures_v2.py &&
+    scripts/p13b_manuscript_v2.py && scripts/p14b_package_v2.py
+    (requires v1 data/processed inputs from Phase 5).

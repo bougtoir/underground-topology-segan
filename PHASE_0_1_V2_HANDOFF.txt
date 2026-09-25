@@ -1,0 +1,3 @@
+Phase 0_1: inventory + manuscript-value traceability
+Status: done
+Note: all v1 manuscript values match frozen csv; vdrop flagged infeasible

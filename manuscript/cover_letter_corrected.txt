@@ -1,0 +1,24 @@
+Dear Editor,
+
+Please consider “Engineering-feasible screening of underground distribution
+renewal: separating routing-policy and conductor-sizing effects” as an
+Original Research Article in Sustainable Energy, Grids and Networks.
+
+The manuscript presents a reproducible forensic reanalysis with an explicit
+MV/transformer/LV hierarchy, active/reactive loss propagation, quantitative AC
+benchmark comparison and binding feasibility gates. Fixed-conductor routing-
+policy savings are 0.2%,
+0.4% and
+0.2%; combined best-found routing and
+conductor-screening savings are 3.7%,
+5.8% and
+4.5%. The cases are explicitly framed
+as synthetic geospatial screens rather than observed municipal utility
+networks or construction-ready designs.
+
+The work is original, is not under consideration elsewhere, and has been
+approved by all authors. Author, affiliation and corresponding-author fields
+will be completed locally before submission.
+
+Sincerely,
+[Corresponding author]

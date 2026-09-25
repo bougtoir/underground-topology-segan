@@ -1,0 +1,5 @@
+claim,evidence,status
+"feasibility-gated LV re-planning estimand (VoF, retain-S1 admissible)",PRIMARY_ESTIMAND_SPEC.md; cluster_results_v2.csv vof_mean,novel_method
+renewal-as-reoptimization framing survives peer critique when result is null,manuscript_v3 framing,novel_framing
+negative/near-zero finding: incumbent corridors near cost-minimal at LV scale,scenario_results_v2.csv,novel_empirical
+result sensitivity to LV/MV boundary assumption quantified,ENGINEERING_ASSUMPTION_SENSITIVITY.csv,novel_empirical

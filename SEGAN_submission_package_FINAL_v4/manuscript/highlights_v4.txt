@@ -1,0 +1,5 @@
+Engineering feasibility is imposed before topology comparison
+Linearized feeder model agrees with AC power flow on all feeders
+Topology flexibility is worth under 0.5% of life-cycle cost
+Naive forced-redesign contrasts mislead when incumbents excluded
+Reconstruction and LV/MV assumptions shape renewal conclusions

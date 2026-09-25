@@ -1,0 +1,3 @@
+record_id,phase,artifact,category,source,retrieved_utc,size_bytes,sha256,license_or_terms,status,notes
+P0-001,0,segan_submission_files.zip,canonical-input,prior Devin session attachment,2026-09-24T17:06:12.248842+00:00,1293834,533f2d94b4add0245b008d903506e7be714820e1738eb6eef77dc059ea56dbfa,user-provided,preserved-read-only,The user-referenced browser suffix '(4)' was absent; byte-identical repository and attachment copies match.
+P0-002,0,manuscript_inline.docx,canonical-input,prior Devin session attachment,2026-09-24T17:06:12.248842+00:00,630725,fe711632a49ac89e1740c80068b04187de487345a2998e86aa479d912be7718d,user-provided,preserved-read-only,The user-referenced browser suffix '(4)' was absent; byte-identical repository and attachment copies match.

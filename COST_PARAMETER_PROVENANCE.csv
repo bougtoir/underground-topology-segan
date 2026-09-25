@@ -1,0 +1,10 @@
+parameter,base_value,unit,source_or_status,source_url,retrieval_date_utc,basis,uncertainty_range,confidence,interpretation
+excavation,120000.0,JPY/m,unpublished scenario assumption inherited from canonical package,,2026-09-24,open-cut urban trench,0.5-2x,low,dominant routing-cost uncertainty; not an observed municipal tariff
+duct bank,30000.0,JPY/m,unpublished scenario assumption inherited from canonical package,,2026-09-24,conduit and installation above excavation,0.5-2x,low,varied jointly with excavation
+MV cable at 150 mm2,25000.0,JPY/m,unpublished scenario assumption; size scaling is modeled,,2026-09-24,materials and jointing,0.6-1.5x,low,"catalogue supports electrical properties, not installed price"
+LV cable at 150 mm2,12000.0,JPY/m,unpublished scenario assumption; size scaling is modeled,,2026-09-24,materials and jointing,0.6-1.5x,low,"catalogue supports electrical properties, not installed price"
+cable area-price exponent,0.65,dimensionless,unpublished relative-price scenario assumption,,2026-09-24,price(area)=price(150)*(area/150)^exponent,0.4-1.1,low,varied directly because catalogues contain no installed prices
+100 kVA transformer reference,3500000.0,JPY/unit,unpublished scenario assumption; rating scaling is modeled,,2026-09-24,installed replacement unit,0.7-1.5x,low,"Toshiba catalogue supports losses/loading, not installed price"
+electricity/loss value,25.0,JPY/kWh,unpublished scenario assumption inherited from canonical package,,2026-09-24,value of technical losses,15-40 JPY/kWh,low,not asserted as a utility procurement tariff
+annual O&M,0.015,fraction/year,unpublished scenario assumption inherited from canonical package,,2026-09-24,fraction of installed CAPEX,0.005-0.025,low,applied consistently to alternatives
+discount rate,0.03,fraction/year,study scenario assumption,,2026-09-24,real social discount rate,0.01-0.05,medium,30/40/50-year horizons are also evaluated

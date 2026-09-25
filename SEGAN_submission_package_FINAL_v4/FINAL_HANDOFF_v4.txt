@@ -1,0 +1,69 @@
+FINAL HANDOFF v4 — SEGAN submission package
+
+STATUS: SUBMISSION-READY (pending only author-supplied title-page fields)
+
+1. Primary estimand: VoF = mean over reconstruction replicates r of
+   max(0, NPC(S1_r) − min(NPC(S1_r), NPC(S2))); retain-S1 admissible ⇒
+   nonnegative. Frozen in PRIMARY_ESTIMAND_SPEC.md and
+   config/ECONOMIC_EQUIVALENCE_SPEC.yaml (1% margin, frozen
+   pre-classification).
+
+2. Final VoF and equivalence classification (all economically_equivalent):
+   Sano +0.0145% | Kudamatsu +0.3935% | Yasu +0.2010% of S1 NPC.
+
+3. Secondary naive ΔNPC: Sano +0.014% | Kudamatsu −10.06% | Yasu +0.20%.
+   Kudamatsu negative value = estimand artifact (incumbent excluded from
+   forced-redesign candidate set; ensemble mean vs single candidate) +
+   5-cluster capex concentration; sign flips under MV threshold 200 kW.
+   Never the primary result, never an "economic penalty of offering
+   redesign".
+
+4. AC diagnostics: 672 feasible synthesized feeders, all converged;
+   max |vm err| 0.0193 pu vs pre-specified 0.02; feasibility agreement
+   1.00. Validates linearized calculations on synthesized models only.
+   Iwamoto 11-bus non-convergence noted in Supplement.
+
+5. LV demand coverage: 74.7% / 55.1% / 53.4% of total zone demand
+   (Sano/Kudamatsu/Yasu); MV-served demand (>150 kW nodes) excluded by
+   design and cancels in all contrasts.
+
+6. Engineering-assumption robustness: coincidence 0.5–0.8, cluster
+   target 80 kW, rep24 — VoF ordering stable; MV threshold is the only
+   sign-flipping assumption for the secondary ΔNPC (disclosed).
+
+7. Reconstruction uncertainty: 24-replicate and leave-one-family-out
+   stable; S1 family NPC ratios 1.000/1.006/1.004; reconstructed
+   topologies never equated with observed utility topology.
+
+8. S3 (rooftop PV): moved to Supplement as Figure S1; secondary,
+   scenario-based upper bound; does not alter the primary conclusion.
+
+9. Principal conclusion: within the modeled LV design space, optional
+   topology redesign during undergrounding renewal provides little
+   additional life-cycle value over like-for-like renewal — feasibility
+   gating and estimand design are the transferable contribution.
+
+10. Remaining limitations: reconstructed (not observed) topologies;
+    assumption-conditional results; three-zone, Japan-only sample;
+    surrogate model validated on synthesized feeders only; MV-served
+    demand excluded; S3 self-consumption is an upper bound.
+
+11. Upload files (SEGAN):
+    manuscript/manuscript_draft_v4.docx          — main manuscript
+    manuscript/manuscript_inline_v4.docx         — inline-figure copy
+    manuscript/supplementary_material_v4.docx    — supplement (Fig S1 + notes)
+    manuscript/highlights_v4.txt                 — 5 highlights ≤85 chars
+    manuscript/cover_letter_v4.txt               — cover letter
+    manuscript/declarations_v4.txt               — declarations/COI/data+code availability
+    figures/v4_fig1_study_zones.png … v4_fig4_tornado.png (300 dpi, separate)
+    tables/table2_results_v4.csv                 — machine-readable Table 2
+    Full archive: SEGAN_submission_package_FINAL_v4.zip
+    Municipality outputs: municipality_v4/ (planning support only)
+
+12. Reproduce:
+    python3 -m venv .venv && .venv/bin/pip install -r requirements.lock.txt
+    TAG=v2 .venv/bin/python scripts/p07b_optimize_v2.py     # core numbers
+    .venv/bin/python scripts/p12d_figures_v4.py             # figures+Table2
+    .venv/bin/python scripts/p13d_manuscript_v4.py          # manuscript DOCX
+    .venv/bin/python scripts/p14d_package_v4.py             # package+zip
+    Clean-room verification: FINAL_REPRODUCIBILITY_REPORT.md (bit-exact).

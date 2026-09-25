@@ -1,0 +1,19 @@
+city,component,npc_savings_jpy,share_of_combined_savings,interpretation
+sano,routing/excavation,44183241.962930255,0.04291508331479606,accounting decomposition of the selected screening policies; not a causal marginal effect
+sano,conductors,1072363478.1620132,1.0415842288729862,accounting decomposition of the selected screening policies; not a causal marginal effect
+sano,transformers,0.0,0.0,accounting decomposition of the selected screening policies; not a causal marginal effect
+sano,variable technical losses,-86996302.17906857,-0.08449931218778081,accounting decomposition of the selected screening policies; not a causal marginal effect
+sano,transformer no-load losses,0.0,0.0,accounting decomposition of the selected screening policies; not a causal marginal effect
+sano,rounding/selection interaction residual,-1.5497207641601562e-06,-1.5052402846400766e-15,accounting decomposition of the selected screening policies; not a causal marginal effect
+kudamatsu,routing/excavation,72123949.68019517,0.08183236446658415,accounting decomposition of the selected screening policies; not a causal marginal effect
+kudamatsu,conductors,841131396.6655325,0.954353877199291,accounting decomposition of the selected screening policies; not a causal marginal effect
+kudamatsu,transformers,0.0,0.0,accounting decomposition of the selected screening policies; not a causal marginal effect
+kudamatsu,variable technical losses,-31893184.194753304,-0.036186241665875044,accounting decomposition of the selected screening policies; not a causal marginal effect
+kudamatsu,transformer no-load losses,0.0,0.0,accounting decomposition of the selected screening policies; not a causal marginal effect
+kudamatsu,rounding/selection interaction residual,-1.1920928955078125e-07,-1.3525573784543875e-16,accounting decomposition of the selected screening policies; not a causal marginal effect
+yasu,routing/excavation,56970491.313845545,0.10691550303054596,accounting decomposition of the selected screening policies; not a causal marginal effect
+yasu,conductors,508516154.7336451,0.9543231808024356,accounting decomposition of the selected screening policies; not a causal marginal effect
+yasu,transformers,0.0,0.0,accounting decomposition of the selected screening policies; not a causal marginal effect
+yasu,variable technical losses,-32631356.599252235,-0.06123868383298101,accounting decomposition of the selected screening policies; not a causal marginal effect
+yasu,transformer no-load losses,0.0,0.0,accounting decomposition of the selected screening policies; not a causal marginal effect
+yasu,rounding/selection interaction residual,-2.980232238769531e-07,-5.592948588078214e-16,accounting decomposition of the selected screening policies; not a causal marginal effect

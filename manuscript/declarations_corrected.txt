@@ -1,0 +1,9 @@
+Funding: None.
+Declaration of competing interests: None declared.
+Ethics approval: Not applicable; no human participants or personal data.
+Data and code availability: Raw public-data snapshots, retrieval metadata,
+checksums, scripts, machine-readable outputs and reproduction instructions
+accompany the reproducibility package.
+Generative AI: During preparation, the authors used an AI coding assistant for
+code review, reproducibility checking and language drafting. The authors
+reviewed and edited all outputs and take responsibility for the content.

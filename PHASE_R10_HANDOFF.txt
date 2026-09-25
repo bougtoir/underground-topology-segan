@@ -1,0 +1,2 @@
+PHASE R10 HANDOFF
+DG/PV kept strictly as secondary sensitivity (p08b outputs unchanged); not used to alter the headline estimand. No PV-based rescue of the primary result.

@@ -1,0 +1,11 @@
+PHASE R2 HANDOFF — engineering assumption sensitivity
+date_utc: 2026-09-25T01:12:26.839022Z
+scope: factorial sweep on coincidence(0.5/0.7/0.8), MV threshold(120/200kW), cluster target(80kW), replicates(24)
+outputs: analysis/ENGINEERING_ASSUMPTION_SENSITIVITY.csv, data/processed/*/cluster_results_<tag>.csv
+findings:
+ - coincidence 0.5-0.8: sign of delta_npc stable (kudamatsu -15.2%..-12.5%, sano/yasu small positive); VoF>=0.
+ - MV threshold is materially sensitive: mv200 flips kudamatsu to +0.27% and sano to -2.23%; mv120 shrinks kudamatsu to -2.21%.
+   -> the LV/MV boundary assumption changes which demand is re-plannable; result NOT robust to it. Reported as limitation + estimand scoping.
+ - cluster target 80kW: kudamatsu -7.46%, sano ~0%, yasu -0.11%; sign pattern preserved.
+ - rep24: sano +0.003%, kud -10.11%, yasu +0.24% — stable vs 12-rep baseline.
+verdict: negative/near-zero result qualitatively robust for coincidence & cluster size; MV-threshold sensitivity disclosed.

@@ -1,0 +1,18 @@
+path,pattern,classification
+DECISION_LOG.md,topology likelihood distance,forensic_context
+audit/ORIGINAL_NUMERIC_TEXT_CONTEXTS.csv,topology likelihood distance,forensic_context
+audit/ORIGINAL_NUMERIC_TEXT_CONTEXTS.csv,roughly halved,forensic_context
+audit/ORIGINAL_NUMERIC_TEXT_CONTEXTS.csv,P(LTP>0),forensic_context
+audit/originals/manuscript_inline.docx,topology likelihood distance,forensic_context
+audit/originals/manuscript_inline.docx,roughly halved,forensic_context
+audit/originals/manuscript_inline.docx,P(LTP>0),forensic_context
+scripts/p01_traceability.py,topology likelihood distance,forensic_context
+scripts/p14_package.py,12.1956,forensic_context
+scripts/p14_package.py,2.5441,forensic_context
+scripts/p14_package.py,11.7190,forensic_context
+scripts/p14_package.py,29.1596,forensic_context
+scripts/p14_package.py,31.1232,forensic_context
+scripts/p14_package.py,37.7830,forensic_context
+scripts/p14_package.py,61.7%,forensic_context
+scripts/p14_package.py,60.1%,forensic_context
+scripts/p14_package.py,65.0%,forensic_context

@@ -1,0 +1,13 @@
+doi,title,container,year,volume,issue,pages,authors,verified
+10.1109/61.25627,Network reconfiguration in distribution systems for loss reduction and load balancing,IEEE Transactions on Power Delivery,1989,4,2,1401-1407,"Baran, M.E.; Wu, F.F.",crossref
+10.1109/61.19265,Optimal capacitor placement on radial distribution systems,IEEE Transactions on Power Delivery,1989,4,1,725-734,"Baran, M.E.; Wu, F.F.",crossref
+10.1109/TPWRS.2018.2829021,"Pandapower—An Open-Source Python Tool for Convenient Modeling, Analysis, and Optimization of Electric Power Systems",IEEE Transactions on Power Systems,2018,33,6,6510-6521,"Thurner, Leon; Scheidler, Alexander; Schafer, Florian; Menke, Jan-Hendrik; Dollichon, Julian; Meier, Friederike; Meinecke, Steffen; Braun, Martin",crossref
+10.1002/net.3230220105,Steiner tree problems,Networks,1992,22,1,55-89,"Hwang, F. K.; Richards, Dana S.",crossref
+10.1007/BF00288961,A fast algorithm for Steiner trees,Acta Informatica,1981,15,2,141-145,"Kou, L.; Markowsky, G.; Berman, L.",crossref
+10.1109/MPRV.2008.80,OpenStreetMap: User-Generated Street Maps,IEEE Pervasive Computing,2008,7,4,12-18,"Haklay, M.; Weber, P.",crossref
+10.1109/59.43199,Optimal conductor selection in planning radial distribution systems,IEEE Transactions on Power Systems,1988,3,1,200-206,"Tram, H.N.; Wall, D.L.",crossref
+10.1016/j.epsr.2022.108804,Improving distribution system resilience by undergrounding lines and deploying mobile generators,Electric Power Systems Research,2023,214,,108804,"Taheri, Babak; Molzahn, Daniel K.; Grijalva, Santiago",crossref
+10.1504/IJGEI.2023.132011,Optimal renewable distributed generation planning: an up-to-date state-of-the-art review,International Journal of Global Energy Issues,2023,45,4/5,315-348,"Tarraq, Ali; Mariami, Faissal El; Belfqih, Abdelaziz; Haidi, Touria",crossref
+10.1109/PSCC.2014.7038399,Convex relaxations and linear approximation for optimal power flow in multiphase radial networks,2014 Power Systems Computation Conference,2014,,,1-9,"Gan, Lingwen; Low, Steven H.",crossref
+10.1109/PESMG.2013.6672615,Specialized genetic algorithm to solve the electrical distribution system expansion planning,2013 IEEE Power &amp; Energy Society General Meeting,2013,,,1-5,"Camargo, Vera; Lavorato, Marina; Romero, Ruben",crossref
+10.1002/9781119125204,Reliability Analysis for Asset Management of Electric Power Grids,,2019,,,,,crossref

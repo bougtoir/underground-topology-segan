@@ -1,0 +1,4 @@
+city,final_replicates_per_family,final_total_replicates,final_combined_screening_savings_pct,last_increment_change_percentage_points,prefix_stability_threshold_percentage_points,within_ensemble_prefix_stability_pass,interpretation
+kudamatsu,12,24,5.811673255736027,0.011612461299064236,0.1,True,within-ensemble prefix stability; not independent-seed algorithmic convergence
+sano,12,24,3.6879629728268233,0.0009152996780343869,0.1,True,within-ensemble prefix stability; not independent-seed algorithmic convergence
+yasu,12,24,4.466475879565776,0.00556769812275526,0.1,True,within-ensemble prefix stability; not independent-seed algorithmic convergence

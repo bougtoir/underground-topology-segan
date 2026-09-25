@@ -1,0 +1,4 @@
+algorithm,converged,error,vm_pu_min
+nr,False,LoadflowNotConverged: Power Flow nr did not converge after 100 iterations!,
+bfsw,False,LoadflowNotConverged: Power Flow bfsw did not converge after 100 iterations!,
+iwamoto_nr,False,LoadflowNotConverged: Power Flow iwamoto_nr did not converge after 100 iterations!,
