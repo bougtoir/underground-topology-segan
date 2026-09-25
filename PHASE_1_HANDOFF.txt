@@ -1,0 +1,1 @@
+Phase 1 traced the original manuscript's quantitative claims to code and raw dependencies. 5 CRITICAL findings require reanalysis: electrically infeasible primary feeders, unsupported benchmark validation, and the unfrozen 350-kW LV clustering assumption. Original headline values are quarantined from the corrected manuscript until regenerated.

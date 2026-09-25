@@ -1,0 +1,6 @@
+PHASE R8 HANDOFF — reconstruction robustness
+rep24 (24 replicates): sano +0.003%, kudamatsu -10.11%, yasu +0.24% vs 12-rep baseline
+(+0.014%/-10.06%/+0.20%) -> point estimates stable; signs unchanged.
+Leave-one-family-out (Steiner-A vs incremental-B): s1_famB/s1_famA NPC ratio
+sano 0.9998, kudamatsu 1.0063, yasu 1.0036 -> reconstruction family has negligible effect.
+File: analysis/ENGINEERING_ASSUMPTION_SENSITIVITY.csv (rep24), cluster_results_v2.csv (s1_famA/B_npc).

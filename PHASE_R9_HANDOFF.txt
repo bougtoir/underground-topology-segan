@@ -1,0 +1,2 @@
+PHASE R9 HANDOFF
+delta_npc is capex-dominated; loss NPV ~1.77M JPY/kW makes observed ~0.1-0.3kW loss deltas irrelevant. Break-even requires physical route shortening; candidates give ~0-3m. See audit_v2/COST_MECHANISM_AUDIT.md

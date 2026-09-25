@@ -1,0 +1,15 @@
+upstream,downstream,transformation
+all persisted raw inputs,p19_raw_provenance.py,checksums/acquisition registry
+manufacturer cable/transformer sources,p16_catalogs.py,engineering catalogues
+public municipal CSVs,p03_data_audit.py,audit/checksums
+municipal CSVs,processed anchors,cleaning/encoding
+archived OSM graphs/buildings,p05_gis_demand.py,GIS clipping/demand modeling
+processed anchors,p06_reconstruct.py,anchor bias
+processed nodes/edges/demand,p06_reconstruct.py,clustering/reconstruction
+reconstruction ensemble,p07_optimize.py,S1 baseline
+processed road graph/demand,p07_optimize.py,S1.5/S2 candidates
+cluster scenario outputs,p10_sensitivity.py,economic uncertainty
+scenario/sensitivity/benchmark/data audit,p11_freeze.py,manuscript values
+frozen outputs,p12_figures.py,figures/tables
+frozen outputs and references,p13_manuscript.py,DOCX
+DOCX/figures/tables/provenance/code,p14_package.py,submission package

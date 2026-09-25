@@ -1,0 +1,117 @@
+{
+  "generated_utc": "2026-09-24T17:06:13.923912+00:00",
+  "canonical_originals": [
+    {
+      "path": "audit/originals/segan_submission_files.zip",
+      "expected_sha256": "533f2d94b4add0245b008d903506e7be714820e1738eb6eef77dc059ea56dbfa",
+      "actual_sha256": "533f2d94b4add0245b008d903506e7be714820e1738eb6eef77dc059ea56dbfa",
+      "pass": true
+    },
+    {
+      "path": "audit/originals/manuscript_inline.docx",
+      "expected_sha256": "fe711632a49ac89e1740c80068b04187de487345a2998e86aa479d912be7718d",
+      "actual_sha256": "fe711632a49ac89e1740c80068b04187de487345a2998e86aa479d912be7718d",
+      "pass": true
+    }
+  ],
+  "all_canonical_originals_unchanged": true,
+  "all_reported_networks_feasible": true,
+  "scenario_sampling_draws_per_city": {
+    "sano": 5000,
+    "kudamatsu": 5000,
+    "yasu": 5000
+  },
+  "coherent_city_reconstruction_draw": true,
+  "topology_reoptimized_each_draw": false,
+  "equipment_resized_each_draw": false,
+  "package_text_files_scanned": 100,
+  "prohibited_active_package_hits": [],
+  "forensic_context_hits": [
+    {
+      "path": "DECISION_LOG.md",
+      "pattern": "topology likelihood distance",
+      "classification": "forensic_context"
+    },
+    {
+      "path": "audit/ORIGINAL_NUMERIC_TEXT_CONTEXTS.csv",
+      "pattern": "topology likelihood distance",
+      "classification": "forensic_context"
+    },
+    {
+      "path": "audit/ORIGINAL_NUMERIC_TEXT_CONTEXTS.csv",
+      "pattern": "roughly halved",
+      "classification": "forensic_context"
+    },
+    {
+      "path": "audit/ORIGINAL_NUMERIC_TEXT_CONTEXTS.csv",
+      "pattern": "P(LTP>0)",
+      "classification": "forensic_context"
+    },
+    {
+      "path": "audit/originals/manuscript_inline.docx",
+      "pattern": "topology likelihood distance",
+      "classification": "forensic_context"
+    },
+    {
+      "path": "audit/originals/manuscript_inline.docx",
+      "pattern": "roughly halved",
+      "classification": "forensic_context"
+    },
+    {
+      "path": "audit/originals/manuscript_inline.docx",
+      "pattern": "P(LTP>0)",
+      "classification": "forensic_context"
+    },
+    {
+      "path": "scripts/p01_traceability.py",
+      "pattern": "topology likelihood distance",
+      "classification": "forensic_context"
+    },
+    {
+      "path": "scripts/p14_package.py",
+      "pattern": "12.1956",
+      "classification": "forensic_context"
+    },
+    {
+      "path": "scripts/p14_package.py",
+      "pattern": "2.5441",
+      "classification": "forensic_context"
+    },
+    {
+      "path": "scripts/p14_package.py",
+      "pattern": "11.7190",
+      "classification": "forensic_context"
+    },
+    {
+      "path": "scripts/p14_package.py",
+      "pattern": "29.1596",
+      "classification": "forensic_context"
+    },
+    {
+      "path": "scripts/p14_package.py",
+      "pattern": "31.1232",
+      "classification": "forensic_context"
+    },
+    {
+      "path": "scripts/p14_package.py",
+      "pattern": "37.7830",
+      "classification": "forensic_context"
+    },
+    {
+      "path": "scripts/p14_package.py",
+      "pattern": "61.7%",
+      "classification": "forensic_context"
+    },
+    {
+      "path": "scripts/p14_package.py",
+      "pattern": "60.1%",
+      "classification": "forensic_context"
+    },
+    {
+      "path": "scripts/p14_package.py",
+      "pattern": "65.0%",
+      "classification": "forensic_context"
+    }
+  ],
+  "status": "pass"
+}

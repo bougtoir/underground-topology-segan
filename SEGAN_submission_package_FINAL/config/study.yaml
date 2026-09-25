@@ -1,0 +1,59 @@
+# Beyond Like-for-Like Undergrounding — study configuration (frozen parameters live here)
+project:
+  name: beyond-like-for-like-undergrounding
+  target_journal: "Sustainable Energy, Grids and Networks (SEGAN), Elsevier, ISSN 2352-4677"
+  primary_horizon_years: 40            # frozen primary NPC horizon; 30/50 evaluated in sensitivity
+  horizons_years: [30, 40, 50]
+  discount_rate: 0.03                  # social discount rate, sensitivity [0.01,0.05]
+  seed: 20260924
+
+voltage:
+  nominal_lv_v: 415                    # Japanese LV three-phase (line-line), 100/200V single phase base
+  nominal_mv_kv: 6.6                   # Japanese distribution MV
+  lv_limit_pu: [0.95, 1.05]            # Japanese LV 101V/202V +-6% class tolerance approx
+  mv_limit_pu: [0.95, 1.05]
+
+cost_model:
+  # All JPY unless noted. Components kept separate to avoid double counting.
+  excavation_jpy_per_m: 120000         # open-cut trench per m urban, assumption (sensitivity 0.5x-2x)
+  duct_bank_jpy_per_m: 30000           # conduit/duct materials+install above excavation
+  cable_lv_jpy_per_m: 12000            # LV underground cable (CV/CVT class) materials+jointing per m
+  cable_mv_jpy_per_m: 25000            # MV 6.6kV cable per m
+  pad_transformer_jpy: 3500000         # pole->pad mounted transformer replacement unit cost
+  overhead_reference_note: "LV overhead construction ~ cable+clearance; S1 uses same edges as S0"
+  dg_pv_jpy_per_kwp: 250000            # rooftop PV CAPEX assumption (sensitivity 0.6x-1.5x)
+  electricity_jpy_per_kwh: 25          # value of energy / loss valuation, sensitivity [15,40]
+  om_fraction_of_capex: 0.015          # annual O&M fraction
+
+electrical:
+  conductor_resistivity_ohm_m: 2.826e-8   # aluminium
+  lv_conductor_area_mm2: 150           # LV main line assumption
+  mv_conductor_area_mm2: 150           # MV equivalent
+  freq_hz: 60                          # western Japan 60Hz / eastern 50Hz — per municipality
+  transformer_kva_default: 500
+  power_factor_default: 0.9            # used only where measured pf absent -> labelled assumed
+  time_steps_per_day: 24               # hourly load profile resolution
+  representative_days: 4               # seasonal representatives x365/4
+
+reconstruction:
+  n_replicates: 12                     # feasible legacy reconstructions G_L^(1..M)
+  pole_spacing_m: [25, 30, 35]         # plausible Japanese LV pole spacing band
+  incremental_growth_orders: 8         # permuted demand-node orderings for family B
+
+dg:
+  rooftop_fraction_usable: 0.3         # usable roof area fraction -> labelled assumption
+  pv_capacity_factor: 0.13             # Japan national avg ~13% -> sensitivity
+  allow_hydro: false                   # only where defensible; default off
+  allow_wind: false
+
+sensitivity:
+  n_mc: 500                            # Monte Carlo draws for global sensitivity
+  drivers: [excavation, cable, electricity_value, discount_rate, demand_level, lifetime, dg_capex, pv_cf]
+
+paths:
+  raw: data/raw
+  processed: data/processed
+  analysis: analysis
+  figures: figures
+  tables: tables
+  provenance: provenance

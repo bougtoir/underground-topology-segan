@@ -1,0 +1,308 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" data-content_root="../">
+<head>
+  <meta charset="utf-8" />
+  <meta name="readthedocs-addons-api-version" content="1"><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>CIGRE Networks &mdash; pandapower 3.5.5 documentation</title>
+      <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=03e43079" />
+      <link rel="stylesheet" type="text/css" href="../_static/css/theme.css?v=9edc463e" />
+
+  
+      <script src="../_static/jquery.js?v=5d32c60e"></script>
+      <script src="../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+      <script src="../_static/documentation_options.js?v=993fb437"></script>
+      <script src="../_static/doctools.js?v=9bcbadda"></script>
+      <script src="../_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="../_static/js/theme.js"></script>
+    <script src="../_static/js/versions.js"></script>
+    <link rel="author" title="About these documents" href="../about.html" />
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="MV Oberrhein" href="mv_oberrhein.html" />
+    <link rel="prev" title="Simple pandapower Test Networks" href="test.html" /> 
+<script async type="text/javascript" src="/_/static/javascript/readthedocs-addons.js"></script><meta name="readthedocs-project-slug" content="pandapower" /><meta name="readthedocs-version-slug" content="latest" /><meta name="readthedocs-resolver-filename" content="/networks/cigre.html" /><meta name="readthedocs-http-status" content="200" /></head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="../index.html" class="icon icon-home">
+            pandapower
+          </a>
+              <div class="switch-menus">
+                <div class="version-switch"></div>
+                <div class="language-switch"></div>
+              </div>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../about.html">About pandapower</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../elements.html">Datastructure and Elements</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../std_types.html">Standard Type Libraries</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../powerflow.html">Power Flow</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../contingency.html">Contingency analysis</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../opf.html">Optimal Power Flow</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../shortcircuit.html">Short-Circuit</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../estimation.html">State Estimation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../control.html">Controller Simulation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../timeseries.html">Time Series Simulation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../gridequivalent.html">Grid Equivalent</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../topology.html">Topological Searches</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="../networks.html">Networks</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="example.html">Example Networks</a></li>
+<li class="toctree-l2"><a class="reference internal" href="test.html">Simple pandapower Test Networks</a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href="#">CIGRE Networks</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#high-voltage-transmission-network">High voltage transmission network</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#medium-voltage-distribution-network">Medium voltage distribution network</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#medium-voltage-distribution-network-with-pv-and-wind-der">Medium voltage distribution network with PV and Wind DER</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#medium-voltage-distribution-network-with-all-der">Medium voltage distribution network with all DER</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#low-voltage-distribution-network">Low voltage distribution network</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="mv_oberrhein.html">MV Oberrhein</a></li>
+<li class="toctree-l2"><a class="reference internal" href="lv_schutterwald.html">LV Schutterwald Network</a></li>
+<li class="toctree-l2"><a class="reference internal" href="power_system_test_cases.html">Power System Test Cases</a></li>
+<li class="toctree-l2"><a class="reference internal" href="kerber.html">Kerber Networks</a></li>
+<li class="toctree-l2"><a class="reference internal" href="synthetic_voltage_control_lv_networks.html">Synthetic Voltage Control LV Networks</a></li>
+<li class="toctree-l2"><a class="reference internal" href="dickert_lv_networks.html">Dickert LV Networks</a></li>
+<li class="toctree-l2"><a class="reference internal" href="3phase_grids.html">3-Phase Grid Data</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../plotting.html">Plotting Networks</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../file_io.html">Save and Load Networks</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../converter.html">Converter</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../group.html">Groups</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../toolbox.html">Toolbox</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../protection.html">Protection</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">pandapower</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../index.html" class="icon icon-home" aria-label="Home"></a></li>
+          <li class="breadcrumb-item"><a href="../networks.html">Networks</a></li>
+      <li class="breadcrumb-item active">CIGRE Networks</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="../_sources/networks/cigre.rst.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="cigre-networks">
+<h1>CIGRE Networks<a class="headerlink" href="#cigre-networks" title="Link to this heading"></a></h1>
+<p>CIGRE-Networks were developed by the CIGRE Task Force C6.04.02 to “facilitate the analysis
+and validation of new methods and techniques” that aim to “enable the economic, robust and
+environmentally responsible integration of DER” (Distributed Energy Resources).
+CIGRE-Networks are a set of comprehensive reference systems to allow the “analysis of DER
+integration at high voltage, medium voltage and low voltage and at the desired degree of detail”.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Source for this network is the final Report of Task Force C6.04.02 [1]:
+<a class="reference external" href="https://www.e-cigre.org/publications/detail/575-benchmark-systems-for-network-integration-of-renewable-and-distributed-energy-resources.html">Benchmark Systems for Network Integration of Renewable and Distributed Energy Resources - Reference: 575 - 2014.</a></p>
+<p>See also a correlating Paper with tiny changed network parameters [2]:
+<a class="reference external" href="https://ieeexplore.ieee.org/document/1709447/?arnumber=1709447&amp;tag=1">K. Rudion, A. Orths, Z. A. Styczynski and K. Strunz, Design of benchmark of medium voltage distribution network for investigation of DG integration</a>
+2006 IEEE Power Engineering Society General Meeting, Montreal, 2006</p>
+</div>
+<section id="high-voltage-transmission-network">
+<h2>High voltage transmission network<a class="headerlink" href="#high-voltage-transmission-network" title="Link to this heading"></a></h2>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span><span class="w"> </span><span class="nn">pandapower.networks</span><span class="w"> </span><span class="kn">import</span> <span class="n">create_cigre_network_hv</span>
+
+<span class="c1"># You may specify a length for the connection line between buses 6a and 6b</span>
+<span class="n">net</span> <span class="o">=</span> <span class="n">create_cigre_network_hv</span><span class="p">(</span><span class="n">length_km_6a_6b</span><span class="o">=</span><span class="mf">0.1</span><span class="p">)</span>
+
+<span class="sd">'''</span>
+<span class="sd">This pandapower network includes the following parameter tables:</span>
+<span class="sd">  - shunt (3 elements)</span>
+<span class="sd">  - trafo (6 elements)</span>
+<span class="sd">  - bus (13 elements)</span>
+<span class="sd">  - line (9 elements)</span>
+<span class="sd">  - load (5 elements)</span>
+<span class="sd">  - ext_grid (1 elements)</span>
+<span class="sd">  - gen (3 elements)</span>
+<span class="sd">  - bus_geodata (13 elements)</span>
+<span class="sd">'''</span>
+</pre></div>
+</div>
+<a class="reference internal image-reference" href="../_images/cigre_network_hv.png"><img alt="alternate Text" class="align-center" src="../_images/cigre_network_hv.png" style="width: 42em;" />
+</a>
+<p><a class="reference external" href="https://www.e-cigre.org/publications/detail/575-benchmark-systems-for-network-integration-of-renewable-and-distributed-energy-resources.html">[Source 1]</a></p>
+</section>
+<section id="medium-voltage-distribution-network">
+<h2>Medium voltage distribution network<a class="headerlink" href="#medium-voltage-distribution-network" title="Link to this heading"></a></h2>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span><span class="w"> </span><span class="nn">pandapower.networks</span><span class="w"> </span><span class="kn">import</span> <span class="n">create_cigre_network_mv</span>
+
+<span class="n">net</span> <span class="o">=</span> <span class="n">create_cigre_network_mv</span><span class="p">(</span><span class="n">with_der</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
+
+<span class="sd">'''</span>
+<span class="sd">This pandapower network includes the following parameter tables:</span>
+<span class="sd">  - switch (8 elements)</span>
+<span class="sd">  - load (18 elements)</span>
+<span class="sd">  - ext_grid (1 elements)</span>
+<span class="sd">  - line (15 elements)</span>
+<span class="sd">  - trafo (2 elements)</span>
+<span class="sd">  - bus (15 elements)</span>
+<span class="sd">  - bus_geodata (15 elements)</span>
+<span class="sd">'''</span>
+</pre></div>
+</div>
+<a class="reference internal image-reference" href="../_images/cigre_network_mv.png"><img alt="alternate Text" class="align-center" src="../_images/cigre_network_mv.png" style="width: 42em;" />
+</a>
+<p><a class="reference external" href="https://www.e-cigre.org/publications/detail/575-benchmark-systems-for-network-integration-of-renewable-and-distributed-energy-resources.html">[Source 1]</a></p>
+</section>
+<hr class="docutils" />
+<section id="medium-voltage-distribution-network-with-pv-and-wind-der">
+<h2>Medium voltage distribution network with PV and Wind DER<a class="headerlink" href="#medium-voltage-distribution-network-with-pv-and-wind-der" title="Link to this heading"></a></h2>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>This network contains additional 9 distributed energy resources compared to medium voltage distribution network:</p>
+<ul class="simple">
+<li><p>8 photovoltaic generators</p></li>
+<li><p>1 wind turbine</p></li>
+</ul>
+</div>
+<p>Compared to the case study of CIGRE Task Force C6.04.02 paper all pv and wind energy resources are
+considered but 2 Batteries, 2 residential fuel cells, 1 CHP diesel and 1 CHP fuel cell are neglected.
+Although the case study mentions the High Voltage as 220 kV, we assume 110 kV again because of no given 220 kV-Trafo data.</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span><span class="w"> </span><span class="nn">pandapower.networks</span><span class="w"> </span><span class="kn">import</span> <span class="n">create_cigre_network_mv</span>
+
+<span class="n">net</span> <span class="o">=</span> <span class="n">create_cigre_network_mv</span><span class="p">(</span><span class="n">with_der</span><span class="o">=</span><span class="s2">"pv_wind"</span><span class="p">)</span>
+
+<span class="sd">'''</span>
+<span class="sd">This pandapower network includes the following parameter tables:</span>
+<span class="sd">  - switch (8 elements)</span>
+<span class="sd">  - load (18 elements)</span>
+<span class="sd">  - ext_grid (1 elements)</span>
+<span class="sd">  - sgen (9 elements)</span>
+<span class="sd">  - line (15 elements)</span>
+<span class="sd">  - trafo (2 elements)</span>
+<span class="sd">  - bus (15 elements)</span>
+<span class="sd">  - bus_geodata (15 elements)</span>
+<span class="sd">'''</span>
+</pre></div>
+</div>
+<a class="reference internal image-reference" href="../_images/cigre_network_mv_der.png"><img alt="alternate Text" class="align-center" src="../_images/cigre_network_mv_der.png" style="width: 42em;" />
+</a>
+<p><a class="reference external" href="https://www.e-cigre.org/publications/detail/575-benchmark-systems-for-network-integration-of-renewable-and-distributed-energy-resources.html">[Source 1]</a></p>
+</section>
+<hr class="docutils" />
+<section id="medium-voltage-distribution-network-with-all-der">
+<h2>Medium voltage distribution network with all DER<a class="headerlink" href="#medium-voltage-distribution-network-with-all-der" title="Link to this heading"></a></h2>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>This network contains additional 15 distributed energy resources compared to medium voltage distribution network:</p>
+<ul class="simple">
+<li><p>8 photovoltaic generators</p></li>
+<li><p>1 wind turbine</p></li>
+<li><p>2 Batteries</p></li>
+<li><p>2 residential fuel cells</p></li>
+<li><p>1 CHP diesel</p></li>
+<li><p>1 CHP fuel cell</p></li>
+</ul>
+</div>
+<p>Compared to the case study of CIGRE Task Force C6.04.02 paper all distributed energy resources are
+considered. Although the case study mentions the High Voltage as 220 kV, we assume 110 kV again because of no given 220 kV-Trafo data.</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span><span class="w"> </span><span class="nn">pandapower.networks</span><span class="w"> </span><span class="kn">import</span> <span class="n">create_cigre_network_mv</span>
+
+<span class="n">net</span> <span class="o">=</span> <span class="n">create_cigre_network_mv</span><span class="p">(</span><span class="n">with_der</span><span class="o">=</span><span class="s2">"all"</span><span class="p">)</span>
+
+<span class="sd">'''</span>
+<span class="sd">This pandapower network includes the following parameter tables:</span>
+<span class="sd">  - switch (8 elements)</span>
+<span class="sd">  - load (18 elements)</span>
+<span class="sd">  - ext_grid (1 elements)</span>
+<span class="sd">  - sgen (15 elements)</span>
+<span class="sd">  - line (15 elements)</span>
+<span class="sd">  - trafo (2 elements)</span>
+<span class="sd">  - bus (15 elements)</span>
+<span class="sd">  - bus_geodata (15 elements)</span>
+<span class="sd">'''</span>
+</pre></div>
+</div>
+<a class="reference internal image-reference" href="../_images/cigre_network_mv_der_all.png"><img alt="alternate Text" class="align-center" src="../_images/cigre_network_mv_der_all.png" style="width: 42em;" />
+</a>
+<p><a class="reference external" href="https://www.e-cigre.org/publications/detail/575-benchmark-systems-for-network-integration-of-renewable-and-distributed-energy-resources.html">[Source 1]</a></p>
+</section>
+<hr class="docutils" />
+<section id="low-voltage-distribution-network">
+<h2>Low voltage distribution network<a class="headerlink" href="#low-voltage-distribution-network" title="Link to this heading"></a></h2>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span><span class="w"> </span><span class="nn">pandapower.networks</span><span class="w"> </span><span class="kn">import</span> <span class="n">create_cigre_network_lv</span>
+
+<span class="n">net</span> <span class="o">=</span> <span class="n">create_cigre_network_lv</span><span class="p">()</span>
+
+<span class="sd">'''</span>
+<span class="sd">This pandapower network includes the following parameter tables:</span>
+<span class="sd">  - switch (3 elements)</span>
+<span class="sd">  - load (15 elements)</span>
+<span class="sd">  - ext_grid (1 elements)</span>
+<span class="sd">  - line (37 elements)</span>
+<span class="sd">  - trafo (3 elements)</span>
+<span class="sd">  - bus (44 elements)</span>
+<span class="sd">  - bus_geodata (44 elements)</span>
+<span class="sd">'''</span>
+</pre></div>
+</div>
+<a class="reference internal image-reference" href="../_images/cigre_network_lv.png"><img alt="alternate Text" class="align-center" src="../_images/cigre_network_lv.png" style="width: 42em;" />
+</a>
+<p><a class="reference external" href="https://www.e-cigre.org/publications/detail/575-benchmark-systems-for-network-integration-of-renewable-and-distributed-energy-resources.html">[Source 1]</a></p>
+</section>
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="test.html" class="btn btn-neutral float-left" title="Simple pandapower Test Networks" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="mv_oberrhein.html" class="btn btn-neutral float-right" title="MV Oberrhein" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2016-2026 by Fraunhofer IEE and University of Kassel.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

@@ -1,0 +1,10 @@
+{
+ "phase": "R2",
+ "checks": {
+  "scenarios": 8,
+  "files_exist": true,
+  "vof_nonneg": true,
+  "key_sensitivity": "mv_threshold"
+ },
+ "status": "pass"
+}

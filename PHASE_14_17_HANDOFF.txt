@@ -1,0 +1,8 @@
+Highlights (5 bullets <=85 chars) written.
+claim_evidence_matrix.csv maps every claim to a machine-readable source.
+Municipality planning-support summaries written for 3 cities.
+SEGAN rules rechecked: original research article, single-anonymized,
+highlights 3-5 bullets <=85 chars, GenAI declaration included.
+Abstract 250-word limit remains UNVERIFIED (third-party source).
+Two-byte character audit on English deliverables logged above.
+submission_package.zip assembled with all machine-readable outputs.

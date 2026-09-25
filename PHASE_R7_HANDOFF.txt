@@ -1,0 +1,7 @@
+PHASE R7 HANDOFF — coverage bias audit
+All demand is accounted for: MV-served customers (>150 kW/node, spec-frozen) are excluded from
+re-planning in BOTH scenarios identically (their cost cancels in delta_npc); every remaining LV
+node is assigned to a zone incl. degenerate single-customer zones (S1=S2=transformer-only).
+modeled LV share of total demand: sano 74.7%, kudamatsu 55.1%, yasu 53.4% (rest MV-served by design).
+Estimand therefore scoped to "LV renewal planning"; headline deltas are shares of LV-zone NPC.
+File: analysis/demand_coverage_audit.csv

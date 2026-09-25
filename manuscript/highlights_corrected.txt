@@ -1,0 +1,5 @@
+• Separates routing-policy effects from combined routing and sizing.
+• Rejects candidates that fail voltage, thermal, radiality or balance gates.
+• Validates the balanced radial approximation against three CIGRE feeders.
+• Samples reconstruction and policy choices coherently at city level.
+• Frames municipal cases as synthetic screens, not observed utility grids.

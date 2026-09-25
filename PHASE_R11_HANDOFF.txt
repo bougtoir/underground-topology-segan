@@ -1,0 +1,2 @@
+PHASE R11 HANDOFF
+Novelty matrix written: analysis/NEGATIVE_RESULT_NOVELTY_MATRIX.csv — contribution = estimand + feasibility gating + honestly-bounded null result, not a magnitude claim.

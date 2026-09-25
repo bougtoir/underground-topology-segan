@@ -1,0 +1,3 @@
+Phase 24_28: reproducibility, reviewer gate, municipality outputs, package
+Status: done
+Note: SEGAN_submission_package_FINAL.zip 58 entries

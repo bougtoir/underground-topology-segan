@@ -1,0 +1,5 @@
+Undergrounding renewal treated as a network re-optimization problem
+Life-cycle topology profit reaches 12.2% of like-for-like cost
+Steiner-tree synthesis plus per-edge conductor sizing on road graphs
+Reconstruction uncertainty propagated via a topology likelihood metric
+Rooftop-PV extension lowers net present cost in all modeled clusters

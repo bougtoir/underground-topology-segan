@@ -1,0 +1,3 @@
+5 figures (300dpi PNG) + table2_results.csv.
+manuscript/manuscript_draft.docx with OMML equations, Vancouver
+citations, 213-word abstract, 12 Crossref-verified references.

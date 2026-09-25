@@ -1,0 +1,4 @@
+city,final_replicates_per_family,final_total_replicates,final_ltp_pct,last_increment_change_percentage_points,convergence_threshold_percentage_points,convergence_pass
+kudamatsu,12,24,6.144362839217706,0.0045378699043352455,0.1,True
+sano,12,24,4.153946599739333,0.004520530188754535,0.1,True
+yasu,12,24,5.023809066786685,0.010436709144940437,0.1,True

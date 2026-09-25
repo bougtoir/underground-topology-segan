@@ -1,0 +1,9 @@
+{
+ "phase": "R7",
+ "coverage_pct": {
+  "sano": 74.68,
+  "kudamatsu": 55.08,
+  "yasu": 53.44
+ },
+ "status": "pass"
+}

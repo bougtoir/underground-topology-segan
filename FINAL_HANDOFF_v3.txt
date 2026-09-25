@@ -1,0 +1,30 @@
+FINAL HANDOFF v3 — SEGAN negative-result consolidation — 2026-09-25T01:15:09.258301Z
+
+REQUIRED STATEMENTS
+1. Classification: NEGATIVE-BUT-BOUNDED result. Under the frozen primary estimand, all three
+   zones are 'economically_equivalent' (VoF < 1% margin).
+2. Estimand: VoF = mean_reps max(0, NPC(rep) - NPC(best feasible S2)); retain-S1 admissible;
+   nonnegative by construction (PRIMARY_ESTIMAND_SPEC.md).
+3. Results: VoF = 0.01%/0.39%/0.20%
+   (Sano/Kudamatsu/Yasu); all economically_equivalent. Secondary dNPC =
+   +0.01%/-10.1%/+0.20%.
+4. AC validation: 672 feeders, 0 non-converged, max |vm err| 0.0193 pu (tol 0.02),
+   feasibility agreement 1.00 — LinDistFlow validated.
+5. Robustness: rep24 stable (+0.00/-10.11/+0.24%); family ratio ~1.00; coincidence sweep keeps signs.
+6. Kudamatsu explanation: -10% dNPC = estimand artifact (S1 excluded from S2 candidate set,
+   ensemble mean vs single candidate) + 5-cluster rewiring-capex concentration; flips sign at
+   mv200; NOT generalized.
+7. Coverage: MV-served demand excluded by design (cancels in contrasts); LV-modeled = 75/55/53%
+   of total demand; estimand scoped to LV renewal planning.
+8. Reconstruction uncertainty: ensemble of 12 (24 checked) replicates, 2 families; results
+   conditional on ensemble — no replicate claimed as truth.
+9. Terminology: dNPC (secondary contrast), VoF (primary estimand), TDD (edge-set distance).
+   LTP/TLD absent from manuscript.
+10. Limitations: LV/MV boundary assumption moves dNPC (not VoF ordering); LinDistFlow surrogate;
+    modeled demands; municipal anchors not pole locations; Iwamoto benchmark non-converged (excluded).
+11. Upload files: SEGAN_submission_package_FINAL_v3.zip (63 entries), manuscript_draft_v3.docx,
+    manuscript_inline_v3.docx, highlights_v3.txt, municipality_v3/.
+12. Reproduce: python scripts/p06b_reconstruct_v2.py, p07b_optimize_v2.py (env: TAG/INTAG/COINC/
+    NREP/CLUSTER_KW/LV_MAX), p09_ac_validation.py, p11c/p12c/p13c/p14c; all numbers machine-readable.
+
+Verdict: INTERNAL CONSISTENCY ACHIEVED under frozen estimand; submission package v3 complete.

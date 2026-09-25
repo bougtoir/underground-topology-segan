@@ -1,0 +1,10 @@
+{
+  "pandapower_version": "3.5.5",
+  "cigre_reference": "pandapower.networks.create_cigre_network_lv",
+  "cigre_ac_solver_agreement": true,
+  "radial_model_quantitative_agreement": true,
+  "voltage_tolerance_pu": 0.003,
+  "loss_relative_tolerance": 0.1,
+  "iwamoto_all_algorithms_converged": false,
+  "iwamoto_primary_validation_status": "excluded_unsuitable_nonconvergent_stress_case"
+}

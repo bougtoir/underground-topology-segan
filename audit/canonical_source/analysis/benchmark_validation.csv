@@ -1,0 +1,3 @@
+benchmark,n_bus,n_line,n_load,n_trafo,vm_pu_min,vm_pu_max,pl_mw,total_load_mw,converged
+case11_iwamoto,11,11,5,0,,,,0.5670000000000001,False
+cigre_lv,44,37,15,3,0.9122689646143034,1.0,0.02182175222743888,0.6865999999999999,True

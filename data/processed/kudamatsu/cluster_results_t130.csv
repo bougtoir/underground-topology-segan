@@ -1,0 +1,3 @@
+city,cluster,terminals,raw_kw,coinc_kw,n_s1,n_s1_feas,s1_npc_mean,s1_npc_feas_mean,s1_capex_mean,s1_length_mean,s1_plkw_mean,s1_vdrop_max,s1cond_npc_mean,s1cond_vdrop_max,n_s1cond_feas,s1cond_plkw_mean,s2f_npc,s2f_plkw,s2_npc,s2_w,s2_capex,s2_plkw,s2_length,s2_vdrop,s2_upsize_m,s2_feasible,tld
+kudamatsu,10,1,30.219710614115037,18.13182636846902,1,1,4713525.528645839,4713525.528645839,0.0,0.0,0.0,0.0,4713525.528645839,0.0,1,0.0,4713525.528645839,0.0,4713525.528645839,0,0.0,0.0,0.0,0.0,0.0,True,0.0
+kudamatsu,69,1,12.492652724343367,7.49559163460602,1,1,4713525.528645839,4713525.528645839,0.0,0.0,0.0,0.0,4713525.528645839,0.0,1,0.0,4713525.528645839,0.0,4713525.528645839,0,0.0,0.0,0.0,0.0,0.0,True,0.0

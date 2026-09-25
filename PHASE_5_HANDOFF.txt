@@ -1,0 +1,2 @@
+PHASE 5 HANDOFF
+Study zones 2.6x2.6km: sano 826 nodes/8126 buildings, kudamatsu 800/749, yasu 738/2851. Demand modeled from footprint x assumed floors x density (documented assumption).

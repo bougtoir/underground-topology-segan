@@ -1,0 +1,2 @@
+PHASE 4 HANDOFF
+benchmark_validation.csv: cigre_lv converged (vm 0.912-1.0 pu, losses 21.8kW). case11_iwamoto did not converge in pandapower 3.5.5 - recorded, not faked.

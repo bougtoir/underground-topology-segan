@@ -1,0 +1,3 @@
+Phase 18_23: manuscript_draft_v2 + inline + figures/tables + highlights
+Status: done
+Note: 196-word abstract; Vancouver order preserved

@@ -1,0 +1,84 @@
+key,value,unit,source,label
+sano_clusters,140,count,scenario_results.csv,modeled
+sano_demand_mw,51.476547460813705,MW,scenario_results.csv,modeled
+sano_s1_npc_bn,13.328681203749325,bn JPY,scenario_results.csv,modeled
+sano_s2_npc_bn,11.703167646042564,bn JPY,scenario_results.csv,modeled
+sano_delta_npc_bn,1.625513557706758,bn JPY,scenario_results.csv,modeled
+sano_ltp_pct,12.19560684855682,%,scenario_results.csv,modeled
+sano_ltpB_pct,11.977955936350972,%,scenario_results.csv,modeled
+sano_p_ltp_pos,0.8285714285714286,prob,scenario_results.csv,modeled
+sano_mean_tld,0.0917163590377876,frac,scenario_results.csv,modeled
+sano_upsize_km,22.236627936222387,km,scenario_results.csv,modeled
+sano_max_vdrop,29.159604312907657,%,scenario_results.csv,modeled
+sano_s1_plkw,2136.6974887675383,kW,scenario_results.csv,modeled
+sano_s2_plkw,818.7785251260553,kW,scenario_results.csv,modeled
+sano_loss_red_pct,61.68018498499137,%,scenario_results.csv,modeled
+kudamatsu_clusters,43,count,scenario_results.csv,modeled
+kudamatsu_demand_mw,17.240926925944496,MW,scenario_results.csv,modeled
+kudamatsu_s1_npc_bn,7.3212492494817365,bn JPY,scenario_results.csv,modeled
+kudamatsu_s2_npc_bn,7.1349905991003775,bn JPY,scenario_results.csv,modeled
+kudamatsu_delta_npc_bn,0.18625865038136,bn JPY,scenario_results.csv,modeled
+kudamatsu_ltp_pct,2.544082902170624,%,scenario_results.csv,modeled
+kudamatsu_ltpB_pct,3.2986621743741438,%,scenario_results.csv,modeled
+kudamatsu_p_ltp_pos,0.7674418604651163,prob,scenario_results.csv,modeled
+kudamatsu_mean_tld,0.1085393611556402,frac,scenario_results.csv,modeled
+kudamatsu_upsize_km,7.915204560375372,km,scenario_results.csv,modeled
+kudamatsu_max_vdrop,31.12323672816703,%,scenario_results.csv,modeled
+kudamatsu_s1_plkw,733.7992752220034,kW,scenario_results.csv,modeled
+kudamatsu_s2_plkw,292.5644323033956,kW,scenario_results.csv,modeled
+kudamatsu_loss_red_pct,60.13018243784947,%,scenario_results.csv,modeled
+yasu_clusters,55,count,scenario_results.csv,modeled
+yasu_demand_mw,20.01279366485226,MW,scenario_results.csv,modeled
+yasu_s1_npc_bn,5.347292283411623,bn JPY,scenario_results.csv,modeled
+yasu_s2_npc_bn,4.720643142628306,bn JPY,scenario_results.csv,modeled
+yasu_delta_npc_bn,0.6266491407833159,bn JPY,scenario_results.csv,modeled
+yasu_ltp_pct,11.718999216244596,%,scenario_results.csv,modeled
+yasu_ltpB_pct,10.623145947310306,%,scenario_results.csv,modeled
+yasu_p_ltp_pos,0.8,prob,scenario_results.csv,modeled
+yasu_mean_tld,0.067051837051837,frac,scenario_results.csv,modeled
+yasu_upsize_km,6.479176138121865,km,scenario_results.csv,modeled
+yasu_max_vdrop,37.78303525314241,%,scenario_results.csv,modeled
+yasu_s1_plkw,798.296534786258,kW,scenario_results.csv,modeled
+yasu_s2_plkw,279.5601350742226,kW,scenario_results.csv,modeled
+yasu_loss_red_pct,64.98041480925704,%,scenario_results.csv,modeled
+sano_mc_delta_mean_bn,1.5876696636775165,bn JPY,sensitivity_mc.csv,sensitivity
+sano_mc_delta_p5_bn,0.5983552254987409,bn JPY,sensitivity_mc.csv,sensitivity
+sano_mc_delta_p95_bn,2.866041117219606,bn JPY,sensitivity_mc.csv,sensitivity
+sano_mc_ltp_pct,11.91167857800447,%,sensitivity_mc.csv,sensitivity
+sano_mc_p_ltp_pos,1.0,prob,sensitivity_mc.csv,sensitivity
+kudamatsu_mc_delta_mean_bn,0.19106237907281487,bn JPY,sensitivity_mc.csv,sensitivity
+kudamatsu_mc_delta_p5_bn,-0.16877063424839425,bn JPY,sensitivity_mc.csv,sensitivity
+kudamatsu_mc_delta_p95_bn,0.6674844820047157,bn JPY,sensitivity_mc.csv,sensitivity
+kudamatsu_mc_ltp_pct,2.6096964133046003,%,sensitivity_mc.csv,sensitivity
+kudamatsu_mc_p_ltp_pos,0.728,prob,sensitivity_mc.csv,sensitivity
+yasu_mc_delta_mean_bn,0.612395958609441,bn JPY,sensitivity_mc.csv,sensitivity
+yasu_mc_delta_p5_bn,0.22314234050449558,bn JPY,sensitivity_mc.csv,sensitivity
+yasu_mc_delta_p95_bn,1.1177490712510445,bn JPY,sensitivity_mc.csv,sensitivity
+yasu_mc_ltp_pct,11.452449691392715,%,sensitivity_mc.csv,sensitivity
+yasu_mc_p_ltp_pos,1.0,prob,sensitivity_mc.csv,sensitivity
+sano_pv_mwp,44.29639680668776,MWp,dg_results.csv,modeled
+sano_gen_gwh_y,50.444736683456014,GWh/yr,dg_results.csv,modeled
+sano_s3_npc_bn,-2.701032403998085,bn JPY,dg_results.csv,modeled
+sano_dg_delta_bn,-14.404200050040652,bn JPY,dg_results.csv,modeled
+sano_p_s3_better,1.0,prob,dg_results.csv,modeled
+kudamatsu_pv_mwp,11.34360109318648,MWp,dg_results.csv,modeled
+kudamatsu_gen_gwh_y,12.918092924920764,GWh/yr,dg_results.csv,modeled
+kudamatsu_s3_npc_bn,3.437601597452774,bn JPY,dg_results.csv,modeled
+kudamatsu_dg_delta_bn,-3.697389001647603,bn JPY,dg_results.csv,modeled
+kudamatsu_p_s3_better,1.0,prob,dg_results.csv,modeled
+yasu_pv_mwp,14.348387402911076,MWp,dg_results.csv,modeled
+yasu_gen_gwh_y,16.339943574435136,GWh/yr,dg_results.csv,modeled
+yasu_s3_npc_bn,0.0626164593088801,bn JPY,dg_results.csv,modeled
+yasu_dg_delta_bn,-4.658026683319426,bn JPY,dg_results.csv,modeled
+yasu_p_s3_better,1.0,prob,dg_results.csv,modeled
+bench_case11_iwamoto_converged,False,,benchmark_validation.csv,benchmark
+bench_cigre_lv_converged,True,,benchmark_validation.csv,benchmark
+audit_sano_rows,9519,rows,data_audit.csv,observed
+audit_sano_tier,1,,data_audit.csv,observed
+audit_sano_pole_dupes,391,count,data_audit.csv,observed
+audit_kudamatsu_rows,4227,rows,data_audit.csv,observed
+audit_kudamatsu_tier,2,,data_audit.csv,observed
+audit_kudamatsu_pole_dupes,0,count,data_audit.csv,observed
+audit_yasu_rows,0,rows,data_audit.csv,observed
+audit_yasu_tier,3,,data_audit.csv,observed
+audit_yasu_pole_dupes,-1,count,data_audit.csv,observed

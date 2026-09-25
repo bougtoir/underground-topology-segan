@@ -1,0 +1,19 @@
+{
+  "phase": 1,
+  "status": "reanalysis_required",
+  "audited_claims": 43,
+  "numeric_text_contexts": 34,
+  "severity_counts": {
+    "MAJOR": 34,
+    "CRITICAL": 5,
+    "MINOR": 4
+  },
+  "hard_coded_quantities": 6,
+  "critical_findings": [
+    "Voltage infeasibility invalidates primary scenario inclusion and the same-model argument.",
+    "Voltage infeasibility invalidates primary scenario inclusion and the same-model argument.",
+    "Voltage infeasibility invalidates primary scenario inclusion and the same-model argument.",
+    "This structural assumption produces infeasible LV feeders and is not in the frozen configuration.",
+    "Convergence alone is not quantitative validation; the stored 0.912 pu minimum is outside the stated 0.95 pu gate."
+  ]
+}
