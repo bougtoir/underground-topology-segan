@@ -1,0 +1,12 @@
+Declarations
+- Declaration of generative AI: during the preparation of this work the
+  authors used an AI coding assistant for code scaffolding and drafting.
+  The authors reviewed and edited all content and take full
+  responsibility for the publication.
+- Data availability: all scripts, the source registry, checksums, and
+  machine-readable result tables are provided in the supplementary
+  repository snapshot. Municipal open data were used under their stated
+  licenses (CC-BY for Kudamatsu).
+- Code availability: the full analysis pipeline (scripts/) is included
+  in the submission package and the linked public repository.
+- Conflict of interest: none declared. Funding: none.

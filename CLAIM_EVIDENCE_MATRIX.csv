@@ -1,0 +1,10 @@
+claim,evidence_source,epistemic_label
+All reported clusters pass the frozen screening gates,analysis/scenario_results.csv;analysis/feasibility_diagnostics.csv,modeled
+Fixed-conductor routing-policy and combined screening savings are distinct estimands,analysis/scenario_results.csv,modeled
+Paired route/conductor attribution is policy-specific and non-causal,analysis/ablation_decomposition.csv,modeled
+Three CIGRE radial feeders pass predeclared error tolerances,analysis/benchmark_radial_comparison.csv,benchmark
+case11_iwamoto is excluded after three solver failures,analysis/benchmark_ac_solvers.csv;analysis/benchmark_iwamoto_diagnosis.csv,benchmark
+Municipal datasets do not observe feeder connectivity,MUNICIPAL_DATA_PROVENANCE_AUDIT.csv,observed/provenance
+Cost inputs are assumptions varied in conditional scenario sampling,COST_PARAMETER_PROVENANCE.csv;analysis/sensitivity_mc.csv,assumed/sensitivity
+Topology and equipment are frozen within each sampling draw,analysis/sensitivity_mc.csv,sensitivity
+Prefix stability is not independent-seed algorithmic convergence,analysis/reconstruction_prefix_stability_summary.csv,diagnostic

@@ -1,0 +1,4 @@
+municipality,file,rows,cols,encoding,lat_null,lon_null,pole_field,pole_dupes,lat_min,lat_max,lon_min,lon_max,sha256,tier
+Sano,sano_security_lights.csv,9519,6,cp932,0,0,電柱番号,370,36.26923485,36.53735539,139.4508393,139.6348216,69c1026c9888c89cb9a894cc7b688c723aa105a151b1678ecda270f0103f7034,1
+Kudamatsu,352071_security_lights*.csv (3 parts),4227,14,cp932,0,0,"防犯灯_ID (security-light id, NOT pole no)",0,33.94343889,34.11051417,131.8218111,131.9325219,2518de17d1e250a66b3c985b4a39dba6f2bbc8fe448df3f73cd5072fee8a8d68;ec2ce0bc30aa5279230ccc896f18f641a5cd572c73ab71a9e4b8e5c31cccb6d0;dd76ab1b26ff2bcddd11f81349f1903e05243263dd1523cfc6080d99ba04ba58,2
+Yasu,(none downloaded),0,0,-,-1,-1,-,-1,,,,,-,3

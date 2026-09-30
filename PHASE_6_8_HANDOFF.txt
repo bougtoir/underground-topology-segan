@@ -1,0 +1,6 @@
+S0 reconstruction: 12 replicates/cluster across families A (jittered Steiner,
+anchor-biased) and B (incremental cheapest attachment).
+S2: multi-weight Steiner + per-edge conductor sizing; positive LTP achieved.
+S3: rooftop PV (30% usable roof, 0.15 kWp/m2, self-consumption bound).
+Known issue fixed mid-run: iterrows float upcast unified node ids to 'N.0'.
+Max voltage drop ~30% in reconstructed feeders flagged as limitation.

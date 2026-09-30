@@ -1,0 +1,2 @@
+PHASE 2+3 HANDOFF
+Sano: 9519 security-light rows WITH denchu pole numbers (Tier1 anchors). Kudamatsu: 4227 rows, security-light IDs only (Tier2). Yasu: dataset listed but file not located; Tier3 via OSM/PLATEAU.

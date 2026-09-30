@@ -1,0 +1,3 @@
+Phase 2_4: voltage root-cause + engineering repair + frozen feasibility spec
+Status: done
+Note: structural (scale/coincidence/ampacity); spec frozen pre-run

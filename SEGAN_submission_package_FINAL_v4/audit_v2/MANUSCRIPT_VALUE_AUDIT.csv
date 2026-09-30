@@ -1,0 +1,15 @@
+claim,value_source,computed,reported,upstream,status
+238 clusters,computed,238,238,cluster_results.csv per city,MATCH
+88.7 MW demand,computed,88.7,88.7,nodes.csv p_kw sum,MATCH
+Sano LTP 12.2%,12.19560684855682,12.2,scenario_results.csv,MATCH
+Kudamatsu LTP 2.5%,2.544082902170624,2.5,,MATCH
+Yasu LTP 11.7%,11.718999216244596,11.7,,MATCH
+dNPC 1.63/0.19/0.63 bn,"[1.63, 0.19, 0.63]","[1.63, 0.19, 0.63]",,MATCH
+loss red 62/60/65%,"[62, 60, 65]","[62, 60, 65]",,MATCH
+upsize 22.2/7.9/6.5 km,"[22.2, 7.9, 6.5]","[22.2, 7.9, 6.5]",,MATCH
+TLD 0.09/0.11/0.07,"[0.092, 0.109, 0.067]","[0.092, 0.109, 0.067]",,MATCH
+MC P(LTP>0) 1.00/0.73/1.00,"[1.0, 0.728, 1.0]","[1.0, 0.73, 1.0]",sensitivity_mc.csv,MATCH
+PV 44.3/11.3/14.3 MWp,"[44.3, 11.3, 14.3]","[44.3, 11.3, 14.3]",dg_results.csv,MATCH
+vdrop 29-38%,"[29, 31, 38]","[29, 31, 38]",cluster_results.csv s1_vdrop_max,MATCH-but-infeasible
+records 9519/4227,"[9519, 4227]","[9519, 4227]",data_audit.csv,MATCH
+sens ranges r2-4.5 ekwh15-35 capex+-30% H30-50,config+script,p10_sensitivity.py,MATCH

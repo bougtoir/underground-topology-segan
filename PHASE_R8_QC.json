@@ -1,0 +1,10 @@
+{
+ "phase": "R8",
+ "rep24_stable": true,
+ "family_ratio": {
+  "sano": 0.9998,
+  "kudamatsu": 1.0063,
+  "yasu": 1.0036
+ },
+ "status": "pass"
+}

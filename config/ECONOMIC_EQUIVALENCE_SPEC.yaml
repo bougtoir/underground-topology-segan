@@ -1,0 +1,20 @@
+# Phase R3 — frozen BEFORE classifying corrected results.
+# Equivalence margin derived from cost/model resolution, NOT from
+# observed effect sizes (per prompt).
+economic_equivalence:
+  margin_pct_of_s1_npc: 1.0
+  rationale: >
+    Construction unit costs are uncertain to at least ±30% (Monte-Carlo
+    range), the LinDistFlow-vs-AC loss surrogate error is ~1-20% relative
+    on annual loss value, and procurement/excavation unit prices vary by
+    municipality and contract year. A net-present-cost difference whose
+    magnitude is below 1% of NPC(S1) is below the resolution at which the
+    model can distinguish plans; |ΔNPC|/NPC(S1) < 1% is therefore
+    'economically equivalent', < -1% 'unfavorable', > +1% 'beneficial',
+    and results whose uncertainty band crosses the margin are
+    'indeterminate'.
+  classification:
+    beneficial: "delta > +1% and P(delta>0) high"
+    economically_equivalent: "|delta| <= 1%"
+    unfavorable: "delta < -1%"
+    indeterminate: "uncertainty band crosses the margin"

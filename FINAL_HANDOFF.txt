@@ -1,0 +1,9 @@
+SEGAN corrected-package handoff
+Generated: 2026-09-24T17:06:13.923912+00:00
+Routing-policy savings: 0.2% /
+0.4% /
+0.2%.
+Combined screening savings: 3.7% /
+5.8% /
+4.5%.
+These are synthetic, assumption-conditional screening results.

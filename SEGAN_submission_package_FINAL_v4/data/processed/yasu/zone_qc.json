@@ -1,0 +1,10 @@
+{
+ "city": "yasu",
+ "road_nodes": 738,
+ "road_edges": 2153,
+ "buildings": 2851,
+ "mean_snap_m": 37.162235517986126,
+ "total_p_kw": 20012.793664852274,
+ "median_building_p_kw": 3.369464524911271,
+ "mean_building_p_kw": 7.019569857892765
+}

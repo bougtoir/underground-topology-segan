@@ -1,0 +1,5 @@
+Undergrounding renewal framed as a topology decision point
+Feasibility gates (ampacity, voltage, transformer) precede costing
+Renewal benefit is ~0% or negative at physical LV scale
+Conductor upsizing contributes nothing at true LV feeder scale
+Rooftop PV dominates network re-layout economically

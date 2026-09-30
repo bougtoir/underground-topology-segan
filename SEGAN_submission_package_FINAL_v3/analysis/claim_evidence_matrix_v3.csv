@@ -1,0 +1,10 @@
+claim,evidence
+"VoF +0.01%/+0.39%/+0.20% (Sano/Kudamatsu/Yasu), all economically_equivalent",scenario_results_v2.csv vof_pct; PRIMARY_ESTIMAND_SPEC.md; ECONOMIC_EQUIVALENCE_SPEC.yaml
+Naive ΔNPC +0.01%/-10.1%/+0.20%; negative value is estimand artifact,scenario_results_v2.csv ltp_pct; audit_v2/COUNTERFACTUAL_OPTIMIZATION_AUDIT.md
+Kudamatsu -10% decomposes to 5 clusters with 2-10x rewiring capex,BENEFIT_DECOMPOSITION.csv; audit_v2/KUDAMATSU_MECHANISM_AUDIT.md
+LinDistFlow validated vs pandapower AC on all feasible feeders (max vm err 0.019 pu),AC_VS_LINEAR_VALIDATION.csv; AC_VALIDATION_REPORT.md
+MV-threshold sensitivity flips Kudamatsu ΔNPC (+0.27% at 200kW),ENGINEERING_ASSUMPTION_SENSITIVITY.csv
+24-replicate and leave-one-family-out robust (fam ratio ~1.00),cluster_results_v2.csv s1_famA/B_npc; rep24 scenario
+"feasibility gates: vdrop≤6%, ampacity, 150kVA loading",config/ENGINEERING_FEASIBILITY_SPEC.yaml; p07b_optimize_v2.py
+MV-served nodes >150kW excluded; LV share 75/55/53% of demand,mv_served_nodes.csv; demand_coverage_audit.csv
+rooftop PV reduces NPC further in ~all clusters (upper bound),dg_results_v2.csv p_s3_better

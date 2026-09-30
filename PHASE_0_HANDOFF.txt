@@ -1,0 +1,1 @@
+Phase 0 complete. Canonical ZIP and DOCX are checksum-verified and read-only. The inventory contains 6335 entries and 0 declared pipeline items are missing; these are forensic findings to repair, not ignored exceptions. See AUDIT_FILE_INVENTORY.csv and AUDIT_DEPENDENCY_DAG.md.

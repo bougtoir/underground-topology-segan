@@ -1,0 +1,10 @@
+{
+ "city": "kudamatsu",
+ "road_nodes": 800,
+ "road_edges": 2016,
+ "buildings": 749,
+ "mean_snap_m": 49.11271074531234,
+ "total_p_kw": 17240.926925944488,
+ "median_building_p_kw": 9.66789212028363,
+ "mean_building_p_kw": 23.018594026628154
+}

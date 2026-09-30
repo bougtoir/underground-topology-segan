@@ -1,0 +1,39 @@
+# ENGINEERING_FEASIBILITY_SPEC — frozen before corrected primary runs (Phase 4).
+# Any scenario network violating a gate is flagged infeasible and excluded
+# from the primary S1-vs-S2 estimate (with inclusion/exclusion sensitivity).
+feasibility:
+  voltage_drop_max_pct: 6.0     # LV service drop gate, ~JIS/utility practice for 415/200V
+  transformer:
+    rated_kva: 150              # compact distribution transformer per LV cluster zone
+    max_loading_pct: 100        # thermal limit on coincident peak kVA
+    unit_cost_jpy: 3500000      # from config/study.yaml pad_transformer_jpy
+  ampacity_a:                   # conservative continuous ratings, Al XLPE LV cable (assumed, labelled)
+    150: 350
+    250: 460
+    400: 600
+    600: 780
+  radiality: true               # network must be a single tree connected to its source
+  connectivity: true
+  power_balance: true           # coincident cluster peak <= transformer rated kVA * pf
+  conductor_sizes_mm2: [150, 250, 400, 600]
+
+demand_model:
+  # Correction A: coincidence/diversity. Building peak estimates are summed
+  # raw; a single coincidence factor scales them for feeder-level sizing and
+  # voltage checks. Labelled 'assumed'. Raw peaks still drive MV-thresholding.
+  coincidence_factor: 0.6
+  # Correction B: MV-served threshold. Nodes whose raw peak exceeds an LV
+  # service capacity are not synthesizable on a 415 V radial and are marked
+  # MV-served (excluded from LV cluster synthesis, counted and reported).
+  lv_max_node_kw: 150.0
+  # Correction C: LV cluster scale. One transformer zone ~100 kW raw peak
+  # (coincident 60 kW ~ 80% of 150 kVA at pf 0.9 margin).
+  cluster_target_kw: 100.0
+  cluster_max_kw: 150.0
+
+power_flow:
+  model: LinDistFlow            # balanced 3-phase, same model for all scenarios
+  v_ll_v: 415
+  power_factor: 0.9
+  rho_ohm_m: 2.826e-8           # aluminium
+  conductor_ref_mm2: 150

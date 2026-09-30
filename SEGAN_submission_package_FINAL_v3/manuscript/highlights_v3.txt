@@ -1,0 +1,5 @@
+Topology flexibility at LV renewal valued via nonnegative estimand
+Feasibility gates (ampacity, voltage, transformer) precede costing
+Value of re-layout is under 1%: economically equivalent zones
+Negative raw contrast shown to be estimand/assumption artifact
+AC power-flow validation of the linearized model on all feeders

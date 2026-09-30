@@ -1,0 +1,12 @@
+SEGAN upload set
+1. manuscript/manuscript_corrected.docx
+2. manuscript/cover_letter_corrected.txt
+3. manuscript/highlights_corrected.txt
+4. manuscript/declarations_corrected.txt
+5. manuscript/supplementary_material_corrected.docx
+6. figures/fig1_study_zones.tiff
+7. figures/fig2_topology_example.tiff
+8. figures/fig3_savings_uncertainty.tiff
+9. figures/fig4_ablation_decomposition.tiff
+
+The inline manuscript is a review copy, not a second submission manuscript.

@@ -1,0 +1,11 @@
+{
+  "phase": 0,
+  "status": "complete_with_findings",
+  "canonical_inputs_verified": true,
+  "inventory_rows": 6335,
+  "dependency_edges": 14,
+  "missing_declared_pipeline_items": [],
+  "critical_findings": [
+    "The canonical ZIP contains outputs but no executable scripts or raw data."
+  ]
+}

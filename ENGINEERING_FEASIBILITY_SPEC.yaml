@@ -1,0 +1,102 @@
+# ENGINEERING FEASIBILITY SPECIFICATION (frozen)
+# Corrected hierarchical MV/LV distribution model for the SEGAN reanalysis.
+# Every entry states its basis: "primary_source", "derived", or "assumption".
+# No network that violates a gate marked enforced=true may enter a headline
+# S1-vs-S2 estimate; violations are repaired by design changes (splitting LV
+# zones, adding transformers, upsizing conductor), never by relaxing the gate.
+
+meta:
+  version: "1.0"
+  frozen_on: "2026-09-24"
+  replaces: "implicit single-tier 415 V model in scripts/p07_optimize.py"
+
+system:
+  # Japanese distribution practice represented here: 6.6 kV three-phase
+  # primary and catalogued single-phase 6.6 kV / 210-105 V service
+  # transformers. The LV feeder is a balanced 210-105 V single-phase
+  # three-wire equivalent on the 210 V outer-conductor base.
+  mv_nominal_kv: 6.6                 # basis: primary_source (Toshiba/Chuki catalogues)
+  lv_nominal_v: 210                  # basis: primary_source (6.6kV/210-105V units)
+  lv_service_nominal_v: 105          # basis: primary_source (single-phase three-wire leg)
+  frequency_hz: 60                   # catalogue/reference frequency; overridden by municipality
+  municipality_frequency_hz:         # basis: public Japanese utility service regions
+    sano: 50
+    kudamatsu: 60
+    yasu: 60
+  mv_phases: 3
+  lv_phases: 1
+  power_factor: 0.9                  # basis: assumption (no measured pf available)
+  source_voltage_pu: 1.0             # MV supply point held at nominal
+
+voltage_gates:
+  # Statutory band: 101 +/- 6 V (100 V service) and 202 +/- 20 V (200 V service),
+  # Electricity Business Act Enforcement Regulations Art. 38 (archived e-Gov XML).
+  statutory_100v_band_v: [95, 107]   # basis: primary_source
+  statutory_200v_band_v: [182, 222]  # basis: primary_source
+  # Planning budget that guarantees the statutory band with a 105 V no-load
+  # secondary and nominal MV supply. Budget components are enforced separately
+  # so that an infeasible design cannot be hidden inside a single total.
+  mv_drop_max_pct: 3.0               # basis: assumption (planning allocation)
+  transformer_drop_max_pct: 2.5      # basis: derived (catalogue %Z at rated pf)
+  lv_drop_max_pct: 4.0               # basis: assumption (planning allocation)
+  customer_min_pu_on_105v: 0.905     # = 95 / 105, basis: derived from statute
+  customer_max_pu_on_105v: 1.019     # = 107 / 105, basis: derived from statute
+
+thermal_gates:
+  ampacity_derating_duct: 0.65       # basis: assumption (buried duct vs 40 degC air)
+  max_cable_loading_pct: 100.0
+  design_cable_loading_pct: 80.0     # sizing target, basis: assumption
+  max_transformer_loading_pct: 100.0
+  design_transformer_loading_pct: 80.0  # basis: assumption (load growth headroom)
+
+topology_gates:
+  require_radial: true
+  require_connected: true
+  require_all_demand_served: true
+  transformer_site_rule: "one or more transformers co-located at each road-snapped demand node"
+  modeled_lv_stub_length_m: 25.0     # basis: assumption; geometry unavailable
+  max_lv_route_radius_m: 25.0        # enforced by equivalent service-stub model
+  max_lv_unit_kw: 35.0               # conservative planning unit compatible
+                                     # with 150 mm2 at the 80% design target
+  max_lv_zone_kva: 300.0             # basis: primary_source (largest 6.6kV/210V unit
+                                     #        in the archived street-class catalogue)
+  power_balance_tolerance_kw: 1.0e-6
+
+demand:
+  coincidence_factor: 1.0            # primary analysis takes no diversity credit
+  coincidence_sensitivity: [0.7, 1.0]
+  load_factor: 0.35                  # basis: assumption, sensitivity [0.25, 0.5]
+  loss_factor_formula: "0.3*LF + 0.7*LF^2"   # Buller-Woodrow, basis: derived
+
+conductors:
+  catalog: data/processed/engineering/cable_catalog.csv
+  lv_reference_area_mm2: 150         # like-for-like reference (original study choice)
+  mv_reference_area_mm2: 150
+  lv_candidate_areas_mm2: [60, 100, 150, 200, 250, 325]
+  mv_candidate_areas_mm2: [38, 60, 100, 150, 200, 250, 325]
+
+transformers:
+  catalog: data/processed/engineering/transformer_catalog.csv
+  phases: 1
+  secondary_v: "210-105"
+  allowed_ratings_kva: [10, 20, 30, 50, 75, 100, 150, 200, 300]
+
+enforcement:
+  - {gate: mv_drop_max_pct, enforced: true}
+  - {gate: lv_drop_max_pct, enforced: true}
+  - {gate: transformer_drop_max_pct, enforced: true}
+  - {gate: customer_min_pu_on_105v, enforced: true}
+  - {gate: customer_max_pu_on_105v, enforced: true}
+  - {gate: max_cable_loading_pct, enforced: true}
+  - {gate: max_transformer_loading_pct, enforced: true}
+  - {gate: require_radial, enforced: true}
+  - {gate: require_connected, enforced: true}
+  - {gate: require_all_demand_served, enforced: true}
+  - {gate: max_lv_route_radius_m, enforced: true}
+  - {gate: max_lv_zone_kva, enforced: true}
+
+prohibited_repairs:
+  - "clipping or truncating computed voltages"
+  - "excluding infeasible feeders from reported aggregates"
+  - "relaxing statutory or planning voltage limits to obtain feasibility"
+  - "arguing that two equally infeasible scenarios are comparable"

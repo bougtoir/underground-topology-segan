@@ -1,0 +1,1 @@
+case11_iwamoto: Iwamoto & Tamura Japanese 11-bus distribution benchmark (as shipped in pandapower.networks; power_system_test_cases). cigre_lv: CIGRE Task Force C6.04.02 LV European benchmark via pandapower.

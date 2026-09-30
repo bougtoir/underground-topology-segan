@@ -1,0 +1,8 @@
+{
+ "phase": "18_23",
+ "status": "pass",
+ "checks": {
+  "manuscript_values_v2.csv": "7736701b1b912425",
+  "scenario_results_v2.csv": "b350767186d8b06d"
+ }
+}

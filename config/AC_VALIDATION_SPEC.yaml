@@ -1,0 +1,16 @@
+# Pre-specified tolerances for LinDistFlow-vs-AC validation (Phase R1),
+# frozen BEFORE inspecting validation results.
+ac_validation:
+  scope: "All feasibility-passing clusters, one S1 replicate + best S2 candidate each"
+  network_model:
+    slack_kv: 0.415           # LV bus at source (pad transformer LV side)
+    line_r_ohm_per_km_150mm2: 0.1884   # rho=2.826e-8 Ohm m
+    line_x_ohm_per_km: 0.08   # typical LV XLPE/Al reactance (assumed)
+    load: coincident          # 0.6 x raw peak, pf=0.9 -> p,q at each terminal
+  tolerances:
+    min_vm_pu_abs_err: 0.02        # |vm_ac - vm_linear| <= 0.02 pu
+    loss_rel_err: 0.25             # |pl_ac - pl_lin| / pl_lin <= 25%
+    feasibility_agreement: 0.95    # fraction of feeders where both models
+                                  # agree on vdrop<=6% feasibility
+    npc_bias_max_pct: 1.0          # mean signed NPC(S1-S2) bias vs linear
+  report: AC_VS_LINEAR_VALIDATION.csv + AC_VALIDATION_REPORT.md

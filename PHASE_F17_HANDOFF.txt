@@ -1,0 +1,1 @@
+PHASE_F17 completed 2026-09-25 UTC (v4 micro-revision; see decision_log + FINAL_HANDOFF_v4)

@@ -1,0 +1,10 @@
+{
+ "phase": "9_11",
+ "status": "complete",
+ "checks": [
+  "Main results frozen in analysis/scenario_results.csv.",
+  "Monte Carlo 500 draws over r, ekwh, capex mult, omf, lf, horizon ->",
+  "analysis/sensitivity_mc.csv; tornado in sensitivity_tornado.csv.",
+  "83 citable values frozen to analysis/manuscript_values.csv."
+ ]
+}
