@@ -41,8 +41,8 @@ freeze:
 	$(PY) scripts/p11_freeze.py
 
 manuscript:
-	$(PY) scripts/p12_figures.py
-	$(PY) scripts/p13_manuscript.py
+	$(PY) scripts/p12d_figures_v4.py
+	$(PY) scripts/p13d_manuscript_v4.py
 
 inline:
 	$(PY) scripts/p15_inline_docx.py
@@ -51,7 +51,7 @@ inventory:
 	$(PY) scripts/p00_forensic_inventory.py
 
 package: test
-	$(PY) scripts/p14_package.py
+	$(PY) scripts/p14d_package_v4.py
 
 test:
 	$(PY) -m unittest discover -s tests -v

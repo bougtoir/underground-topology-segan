@@ -1,0 +1,4 @@
+city,eligible_feasible,positive_vof,zero_share_eligible,median_vof_pct_given_positive,max_vof_pct
+kudamatsu,88,13,0.8523,0.582,5.079
+sano,360,3,0.9917,0.486,1.066
+yasu,106,8,0.9245,0.241,6.098

@@ -23,3 +23,20 @@ make all
 ## Labels
 Every quantity is labelled observed / reconstructed / modeled / assumed / sensitivity.
 Never call a reconstructed network an observed utility network.
+
+## CEUS manuscript pipeline
+
+The CEUS submission figures/tables/document are rebuilt by, in order:
+
+```
+.venv/bin/python scripts/p15b_ceus_morphology_v2.py   # morphology descriptors (feasible cohort)
+.venv/bin/python scripts/p16_ceus_figures.py          # Figures 3-6 raster assets
+.venv/bin/python scripts/p20_geographic_context_fig.py # Figure 2 (needs data/raw/geoboundaries + naturalearth)
+.venv/bin/python scripts/p19_ceus_figure_finish.py    # Figure 1 pipeline diagram
+.venv/bin/python scripts/p17_manuscript_ceus.py       # canonical DOCX
+.venv/bin/python scripts/p18_package_ceus.py          # package + inline DOCX
+```
+
+Map inputs: `data/raw/geoboundaries/geoBoundaries-JPN-ADM1.geojson`
+(geoBoundaries, CC-BY-4.0) and `data/raw/naturalearth/ne_10m_land/`
+(Natural Earth 10m land, public domain).

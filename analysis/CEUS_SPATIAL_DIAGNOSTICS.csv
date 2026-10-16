@@ -1,0 +1,4 @@
+metric,city,n,moran_i,perm_p_value,note
+vof_pct_feasible,sano,360,-0.001,0.154,"inverse-distance weights on demand-terminal centroids; 200 permutations; feasible cohort"
+vof_pct_feasible,kudamatsu,88,-0.023,0.766,"same"
+vof_pct_feasible,yasu,106,-0.005,0.274,"same"
