@@ -1,0 +1,12 @@
+predictor,spearman_rho_pooled,spearman_p_pooled,n_used,rho_adj_terminals,sign_by_zone
+terminals,0.316,0.0,554,,sano:1;kudamatsu:1;yasu:1
+coinc_kw,0.13,0.0021,554,-0.033,sano:1;kudamatsu:1;yasu:1
+hull_area_km2,0.295,0.0008,127,0.006,sano:1;kudamatsu:1;yasu:1
+demand_density_hull_kw_km2,-0.278,0.0015,127,-0.039,sano:-1;kudamatsu:-1;yasu:-1
+demand_density_buffer_kw_km2,-0.039,0.3568,554,-0.063,sano:1;kudamatsu:1;yasu:1
+road_density_km_per_km2,0.229,0.0,554,-0.192,sano:1;kudamatsu:1;yasu:1
+mean_edge_len_m,0.163,0.0049,296,0.081,sano:1;kudamatsu:1;yasu:1
+mean_degree,0.286,0.0,296,-0.289,sano:1;kudamatsu:1;yasu:1
+route_len_per_terminal_m,0.274,0.0,554,-0.027,sano:1;kudamatsu:1;yasu:1
+span_m,0.29,0.0,554,-0.011,sano:1;kudamatsu:1;yasu:1
+tld,0.372,0.0,554,0.78,sano:1;kudamatsu:1;yasu:1
